@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
 
-body{
+body {
     height: 100%;
     background: linear-gradient(to right, #575ce5 50%, #f9fbfc 50%) fixed;
 }
 
-.container{
+.container {
     background: #fff;
     width: 400px;
     padding: 50px;
@@ -26,14 +26,14 @@ body{
     perspective: 300px;
 }
 
-.stats{
+.stats {
     text-align: right;
     color: #101020;
     font-weight: 500;
     line-height: 25px;
 }
 
-.coin{
+.coin {
     height: 150px;
     width: 150px;
     position: relative;
@@ -42,20 +42,21 @@ body{
     transform-style: preserve-3d;
 }
 
-.tails{
+.tails {
     transform: rotateX(180deg);
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
 }
 
-.coin img{
+.coin img {
     width: 145px;
 }
 
-.heads, .tails{
+.heads,
+.tails {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -63,7 +64,7 @@ body{
     -webkit-backface-visibility: hidden;
 }
 
-button{
+button {
     width: 120px;
     padding: 10px 0;
     border: 2.5px solid #424ae0;
@@ -71,36 +72,38 @@ button{
     cursor: pointer;
 }
 
-#flip-button{
+#flip-button {
     background: #424ae0;
     color: #fff;
 }
 
-#flip-button:disabled{
+#flip-button:disabled {
     background-color: #e1e0ee;
     color: #101020;
     border-color: #e1e0ee;
 }
 
-#reset-button{
+#reset-button {
     background: #fff;
     color: #424ae0;
 }
 
-@keyframes spin-tails{
-    0%{
+@keyframes spin-tails {
+    0% {
         transform: rotateX(0);
     }
-    100%{
+
+    100% {
         transform: rotateX(1980deg);
     }
 }
 
-@keyframes spin-heads{
-    0%{
+@keyframes spin-heads {
+    0% {
         transform: rotateX(0);
     }
-    100%{
+
+    100% {
         transform: rotateX(2160deg);
     }
 }

@@ -1,21 +1,21 @@
-body{
+body {
     background: ghostwhite;
     color: dimgray;
     font-family: serif;
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 2rem;
 }
 
-#container{
+#container {
     margin: 5% auto;
     border-radius: 5px;
     text-align: center;
 }
 
-.box{
+.box {
     display: inline-block;
     border: 1px solid gray;
     width: 100px;
@@ -25,7 +25,7 @@ h1{
     padding: 0;
 }
 
-span{
+span {
     position: absolute;
     font-size: 75px;
     font-family: sans-serif;
@@ -37,23 +37,23 @@ span{
     margin-left: -35px;
 }
 
-.top{
+.top {
     border-top: none;
 }
 
-.bottom{
+.bottom {
     border-bottom: none;
 }
 
-.left{
+.left {
     border-left: none;
 }
 
-.right{
+.right {
     border-right: none;
 }
 
-.alert{
+.alert {
     height: 75px;
     width: 125px;
     display: inline-block;
@@ -71,7 +71,7 @@ span{
     top: 0;
 }
 
-button{
+button {
     background: dimgray;
     border-radius: 2px;
     color: ghostwhite;
@@ -79,21 +79,21 @@ button{
     outline: none;
 }
 
-button:focus{
+button:focus {
     background: silver;
 }
 
-.activeBox{
+.activeBox {
     background: silver;
 }
 
-@keyframes larger{
-    from{
+@keyframes larger {
+    from {
         height: 75px;
         width: 125px;
     }
 
-    to{
+    to {
         height: 100px;
         width: 250px;
     }
